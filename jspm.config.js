@@ -31,7 +31,8 @@ SystemJS.config({
   ],
   map: {
     "bootstrap": "npm:bootstrap@4.0.0-alpha.2",
-    "jquery": "npm:jquery@2.2.4"
+    "jquery": "npm:jquery@2.2.4",
+    "tether": "npm:tether@1.3.2"
   },
   packages: {
     "npm:bootstrap@4.0.0-alpha.2": {
