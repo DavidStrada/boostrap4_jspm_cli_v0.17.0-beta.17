@@ -29,13 +29,17 @@
         }
       },
       "github:twbs/bootstrap@4.0.0-alpha.2": {
+        "directories": {
+          "lib": "."
+        },
+        "main": "dist/js/bootstrap",
         "files": null,
         "dependencies": {
           "jquery": "*",
           "tether": "github:HubSpot/tether@^1.1.1"
         },
         "meta": {
-          "js/bootstrap.js": {
+          "dist/js/bootstrap.js": {
             "deps": [
               "jquery",
               "tether"
