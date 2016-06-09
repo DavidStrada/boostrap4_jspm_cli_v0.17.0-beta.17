@@ -1,6 +1,7 @@
 SystemJS.config({
   paths: {
     "npm:": "jspm_packages/npm/",
+    "github:": "jspm_packages/github/",
     "app/": "src/"
   },
   browserConfig: {
@@ -27,17 +28,19 @@ SystemJS.config({
 SystemJS.config({
   packageConfigPaths: [
     "npm:@*/*.json",
-    "npm:*.json"
+    "npm:*.json",
+    "github:*/*.json"
   ],
   map: {
-    "bootstrap": "npm:bootstrap@4.0.0-alpha.2",
+    "bootstrap": "github:twbs/bootstrap@4.0.0-alpha.2",
     "jquery": "npm:jquery@2.2.4",
     "tether": "npm:tether@1.3.2"
   },
   packages: {
-    "npm:bootstrap@4.0.0-alpha.2": {
+    "github:twbs/bootstrap@4.0.0-alpha.2": {
       "map": {
-        "jquery": "npm:jquery@2.2.4"
+        "jquery": "npm:jquery@2.2.4",
+        "tether": "github:HubSpot/tether@1.3.2"
       }
     }
   }
